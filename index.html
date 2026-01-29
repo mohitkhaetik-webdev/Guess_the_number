@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .guess {
+            margin: 10px;
+            font-size: 30px;
+        }
+
+        .header {
+            position: absolute;
+            top: 150px;
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(71, 67, 67);">
+
+    <form>
+        <div class="header">
+            <p>Try and guess a random no between 0 and 100</p>
+            <p>You have 10 attenpts to guess the right number.</p>
+        </div>
+        <h1>Number guessing game</h1>
+        <div class="guess">Guess a number</div><input class="userinput" type="text">
+        <button class="sumbit">SUMBIT YOUR GUESS</button>
+        <div class="validation-check"></div>
+        <div class="resultparas" style="text-align: center;">
+            <div class="previousguesses">Previous guesses:<span class="pguesses"></span></div>
+            <div class="remaining">Guesses remaining:<span class="addremaining"></span></div>
+            <div class="highandlow"></div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
